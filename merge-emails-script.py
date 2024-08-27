@@ -3,7 +3,7 @@ import os
 def get_new_output_file(base_path, counter):
     return f"{base_path}_{counter}.txt"
 
-def merge_text_files(input_folder, output_base_path, max_size_bytes=4 * 1024 * 1024):  # 10 MB
+def merge_text_files(input_folder, output_base_path, max_size_bytes=4 * 1024 * 1024):  # 4 MB
     file_counter = 1
     current_size = 0
     output_file = get_new_output_file(output_base_path, file_counter)
